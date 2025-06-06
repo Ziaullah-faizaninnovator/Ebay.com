@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+</head>
+<body>
+  <style>
+body {
+    background-color: #d4d4e7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#loginForm {
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+  
+}
+label{
+  padding: 10px;
+  font-size: 15px;
+}
+
+#loginForm input[type="text"],
+#loginForm input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid wheat;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+#loginForm button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #569fec;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#loginForm button:hover {
+    background-color: #0056b3;
+}
+#loginForm input::placeholder {
+    color: #aaa;
+    font-size: 14px;
+}
+  </style>
+  <form id="loginForm">
+    <label>Name: </label>
+    <input type="text" id="username" placeholder="Username">
+    <label>Password: </label>
+    <input type="password" id="password" placeholder="1234  as a input">        
+    <!-- <label>login to ebay.com </label> -->
+    <button type="submit">Login</button>
+    <!-- <label>Forgot password</label> -->
+  </form>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("loginForm").addEventListener("submit", function (event) {
+          event.preventDefault();
+          const username = document.getElementById("username").value;
+          const password = document.getElementById("password").value;
+          if ((username === "ziaullah" || username === "admin") ||
+            (password === "1234" || password === "12345")) {
+            alert("Login successful   welcome to ebay.com!");
+            window.location.href = "ebay.html"; 
+          } else {
+            alert("Invalid username or password. Please try again.");
+          }
+        });
+      });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+
+body{
+    margin: 0;
+    padding: 0%;
+}
+.navbar{
+color: white;
+display:block;
+background-color:black;
+height: 90px;
+width: auto;
+padding-top: 14px;
+}
+.pannel1{
+display: flex;
+justify-content: space-evenly;
+}
+.pannel1 i{
+    font-size: large;
+    color: white;
+    gap: 10px;
+}
+.nav-search input{
+    width: 550px;
+    height: 34px;
+}
+.pannel1
+.nav-cart{
+    display: flex;
+    gap: 5px;
+}
+.nav-cart p{
+    color: white;
+}
+/* ----------------------pannel 2 section---------------- */
+.pannel2{
+    display:block;
+    background-color:black;
+    display: flex;
+}
+.pannel2 p{
+  color: white;
+    padding-left: 25px;
+}
+
+.imp-point{
+        display: flex;
+        justify-content: space-evenly;
+    font-size: 20px;
+    background-color: rgb(82, 90, 90);
+ }
+ .imp-point p{
+    border: 1px solid white;
+    background-color: red;
+    font-size: 20px;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 1rem;
+ }
+  .imp-point  i{
+    color: white;
+    margin-right: 5px;
+  }
+.slider-img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.main-product{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 45px;
+    justify-content: center;
+    border: 2px solid gray;
+    padding: 20px;
+  text-align: center;
+}
+.product-card{
+    height: 325px;
+    width: 245px;
+    border: 4px solid black;
+    align-items: center;
+    box-shadow: 5px;
+    border-radius: 2px;
+    margin-left: 10px;
+    background-repeat: no-repeat;
+}
+.product-card p{
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    margin-left: 10px;
+}
+.product-card a{
+  font-size: 15px;
+    text-align: center;
+    margin-left: 10px;
+}
+
+/*---------------------- footer-------------------------- */
+.footer-1{
+    background-color:  #0f1111;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+.footer-2{
+    background-color:  #0f1111;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
